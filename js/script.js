@@ -18,10 +18,20 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 
 
 function isPalindromes(word) {
-    for(var i = 0; i < word.length; i++) 
-        if word[i] !== word[word.lenght-i]
-        return false;
-        return true; 
+    var risp=0;
+    var len = word.length;
+    console.log(len);
+    
+
+    for(var i = 0; i < len; i++) 
+        if (word[i] != word[len-1-i]){
+            risp=false;
+        }            
+        else{
+            risp=true;
+        }
+            
+        return risp;        
 }
 
 
@@ -30,4 +40,4 @@ parola = prompt("inserisci la parola da controllare ");
 if  (isPalindromes(parola))
     console.log(" La parola "+parola+" è palindroma");
 else
-    console.log(" La parola "+parola+" è palindroma");
+    console.log(" La parola "+parola+" non è palindroma");
