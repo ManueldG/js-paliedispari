@@ -16,5 +16,18 @@ Scriviamo sempre con commenti i passaggi che vogliamo fare 2.
 Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 */
 
+
+function isPalindromes(word) {
+    for(var i = 0; i < word.length; i++) 
+        if word[i] !== word[word.lenght-i]
+        return false;
+        return true; 
+}
+
+
 var parola;
 parola = prompt("inserisci la parola da controllare ");
+if  (isPalindromes(parola))
+    console.log(" La parola "+parola+" è palindroma");
+else
+    console.log(" La parola "+parola+" è palindroma");
