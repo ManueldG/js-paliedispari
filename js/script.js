@@ -16,27 +16,18 @@ Scriviamo sempre con commenti i passaggi che vogliamo fare 2.
 Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 */
 
-
-function isPalindromes(word) {
-    var risp=0;
-    var len = word.length;
-    console.log(len);
-
-    for(var i = 0; i < len/2; i++) 
-        if (word[i] != word[len-1-i]){
-            console.log("i: "+i+" lettera "+word[i]+" lettera "+word[(len-1-i)]);
-            risp=false;
-        }            
-        else{
-            risp=true;
-        }            
-        return risp;        
-}
-
-
+/*
 var parola;
 parola = prompt("inserisci la parola da controllare ");
 if  (isPalindromes(parola))
     console.log(" La parola "+parola+" è palindroma");
 else
     console.log(" La parola "+parola+" non è palindroma");
+*/
+
+var scelta = prompt("pari o dispari??");
+var numero = parseInt (prompt("inserisci numero da 1 a 5"));
+
+var numeroCPU = random(1,5);
+console.log(numeroCPU);
+console.log( ( isEven(numero+numeroCPU) && scelta==='pari') || (!(isEven(numero+numeroCPU)) && scelta==='dispari') ? "hai vinto" : "hai perso");
