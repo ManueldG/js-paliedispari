@@ -30,6 +30,7 @@ var scelta = prompt("pari o dispari??").trim(); // chiede la scelta tra pari e d
 var numero = parseInt (prompt("inserisci numero da 1 a 5")); // inserisce un numero da 1 a 5
 var numeroCPU = random(1,5); //estrae un numero tra 1 e 5
 var somma = numero + numeroCPU; // somma i numeri dei due giocatori
+console.log(somma);
 console.log( ( isEven(somma) && scelta==='pari') || (!(isEven(somma)) && scelta==='dispari') ? "hai vinto" : "hai perso"); //se la somma è pari e scelta è pari o la somma è dispari e la scelta è dispari scrive hai vinto altrimenti hai perso
 
 
