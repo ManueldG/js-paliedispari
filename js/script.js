@@ -21,16 +21,15 @@ function isPalindromes(word) {
     var risp=0;
     var len = word.length;
     console.log(len);
-    
 
-    for(var i = 0; i < len; i++) 
+    for(var i = 0; i < len/2; i++) 
         if (word[i] != word[len-1-i]){
+            console.log("i: "+i+" lettera "+word[i]+" lettera "+word[(len-1-i)]);
             risp=false;
         }            
         else{
             risp=true;
-        }
-            
+        }            
         return risp;        
 }
 
