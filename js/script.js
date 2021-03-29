@@ -23,9 +23,13 @@ if  (isPalindromes(parola))
     console.log(" La parola "+parola+" è palindroma");
 else
     console.log(" La parola "+parola+" non è palindroma");
+<<<<<<< HEAD
+
+=======
+>>>>>>> f2cb29cbe9957e95140297d404f5768f38a38978
 
 
-var scelta = prompt("pari o dispari??");
+var scelta = prompt("pari o dispari??").trim();
 var numero = parseInt (prompt("inserisci numero da 1 a 5"));
 
 var numeroCPU = random(1,5);
