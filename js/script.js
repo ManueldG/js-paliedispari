@@ -19,16 +19,17 @@ Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andia
 
 var parola;
 parola = prompt("inserisci la parola da controllare ");
-if  (isPalindromes(parola))
-    console.log(" La parola "+parola+" è palindroma");
+if  (isPalindromes(parola)) // controlla se la parola è palindroma
+    console.log(" La parola "+parola+" è palindroma"); // se true è palindroma
 else
-    console.log(" La parola "+parola+" non è palindroma");
+    console.log(" La parola "+parola+" non è palindroma"); // altrimenti non è palindroma
 
 
 
-var scelta = prompt("pari o dispari??").trim();
-var numero = parseInt (prompt("inserisci numero da 1 a 5"));
+var scelta = prompt("pari o dispari??").trim(); // chiede la scelta tra pari e dispari e pulisce dagli spazi la stringa
+var numero = parseInt (prompt("inserisci numero da 1 a 5")); // inserisce un numero da 1 a 5
+var numeroCPU = random(1,5); //estrae un numero tra 1 e 5
+var somma = numero + numeroCPU; // somma i numeri dei due giocatori
+console.log( ( isEven(somma) && scelta==='pari') || (!(isEven(somma)) && scelta==='dispari') ? "hai vinto" : "hai perso"); //se la somma è pari e scelta è pari o la somma è dispari e la scelta è dispari scrive hai vinto altrimenti hai perso
 
-var numeroCPU = random(1,5);
-console.log(numeroCPU);
-console.log( ( isEven(numero+numeroCPU) && scelta==='pari') || (!(isEven(numero+numeroCPU)) && scelta==='dispari') ? "hai vinto" : "hai perso");
+
