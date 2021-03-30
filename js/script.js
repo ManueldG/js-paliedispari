@@ -37,8 +37,8 @@ document.getElementById("select").addEventListener("change",function(){
                 var numeroCPU = random(1,5); //estrae un numero tra 1 e 5
                 var somma = numero + numeroCPU; // somma i numeri dei due giocatori
                 
-                console.log("hai scelto "+scelta," numero "+numero," il computer ha scelto "+numeroCPU," la somma è "+somma);
-                console.log( ( isEven(somma) && scelta==='pari') || (!(isEven(somma)) && scelta==='dispari') ? "hai vinto" : "hai perso"); //se la somma è pari e scelta è pari o la somma è dispari e la scelta è dispari scrive hai vinto altrimenti hai perso
+                document.getElementById("risultato").innerHTML=("hai scelto "+scelta+" numero "+numero+" il computer ha scelto "+numeroCPU+" la somma è "+somma);
+                document.getElementById("risultato").innerHTML+= ( ( isEven(somma) && scelta==='pari') || (!(isEven(somma)) && scelta==='dispari') ? " hai vinto" : " hai perso"); //se la somma è pari e scelta è pari o la somma è dispari e la scelta è dispari scrive hai vinto altrimenti hai perso
         break;
 
         default: alert("scegli un valore");
