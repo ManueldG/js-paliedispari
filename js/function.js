@@ -31,7 +31,7 @@ function isPalindromes(word) {
  */
 
  function random(min, max) {
-    return Math.floor(Math.random()*(max-min)+(min+1));// ritorna un numero random compreso tra min e max e approsimato  
+    return Math.floor(Math.random()*(max-min+1)+(min));// ritorna un numero random compreso tra min e max e approsimato  
 }
 
 /**
