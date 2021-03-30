@@ -11,10 +11,11 @@ function isPalindromes(word) {
     var len = word.length; // legge la lunghezza della stringa
     console.log(word);
 
-    for(var i = 0; i < len/2; i++) // cicla la lunghezza della stringa/2 non c'è bisogno di scorrerla tutta
+    for(var i = 0; i <  Math.floor(len/2); i++) // cicla la lunghezza della stringa/2 non c'è bisogno di scorrerla tutta
         if (word[i] != word[len-1-i]){ // compara la lettera in posizione i con la lettera della posizione complementare
             console.log("i: "+i+" lettera "+word[i]+" lettera "+word[(len-1-i)]);
             risp=false;
+            break;
         }            
         else{
             risp=true;
