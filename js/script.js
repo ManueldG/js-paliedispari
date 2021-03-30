@@ -16,14 +16,14 @@ Scriviamo sempre con commenti i passaggi che vogliamo fare 2.
 Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 */
 
-/*
+
 var parola;
 parola = prompt("inserisci la parola da controllare ");
 if  (isPalindromes(parola)) // controlla se la parola è palindroma
     console.log(" La parola "+parola+" è palindroma"); // se true è palindroma
 else
     console.log(" La parola "+parola+" non è palindroma"); // altrimenti non è palindroma
-*/
+
 
 
 var scelta = prompt("pari o dispari??").trim(); // chiede la scelta tra pari e dispari e pulisce dagli spazi la stringa
